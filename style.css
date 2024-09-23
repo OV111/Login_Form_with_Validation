@@ -1,0 +1,183 @@
+body {
+    box-sizing: border-box;
+    background-image: url("https://img.freepik.com/free-vector/realistic-style-technology-particle-background_23-2148426704.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+    height: 440px;
+    border: 4px solid rgb(62, 14, 107);
+    border-radius: 18px;
+    margin: 50px 450px 50px;
+    padding-bottom: 10px;
+    background-color: rgba(186, 174, 174, 0.5); 
+}
+#signhead  {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 34px;
+    padding:60px 0 2px;
+    color: rgb(62, 14, 107);
+}
+#loghead {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 34px;
+    padding:10px 0 2px;
+    color: rgb(62, 14, 107);
+}
+.username input,
+.email input,
+.password input {
+    text-align: center;
+    border-radius: 6px;
+    margin-bottom: 2px;
+    width: 250px;
+    padding: 4px;
+    font-weight: 800;
+    font-style: bold;
+    cursor: pointer;
+    transition:150ms ease;
+    margin-left: 0px;
+}
+.password input {
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+#passwd-close-eye {
+    display: flex;
+    position: absolute;
+    top: 366px;
+    margin-left: 310px;
+    cursor: pointer;   
+}
+#passwd-eye {
+    display: none;
+    position: absolute;          
+    top: 366px;
+    margin-left: 310px;
+    cursor: pointer;
+}
+.username p{
+    display: flex;
+    justify-content: center;
+    margin-left: -180px;
+    margin-bottom: 1px;
+}
+.email p {
+    display: flex;
+    justify-content: center;
+    margin-left: -200px;
+    margin-bottom: 1px;   
+}
+.password p {
+    display: flex;
+    justify-content: center;
+    margin-left: -180px;
+    margin-bottom: 1px;
+}
+.fa-key {
+    margin-left: 20px;
+}
+::placeholder {
+    color: black;
+    font-style:italic;
+    font-weight: 600;
+}
+label {
+    display: flex;
+    margin-bottom: 20px;
+}
+.remember-me {
+    display: none;
+    justify-content: center;
+    margin-left: -131px;
+    margin-top: -20px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 14px;
+    margin-left: 29px;
+    padding: 0px;
+    width: 150px;
+    height: 40px;
+    font-size: 24px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+.sign_up a{
+    text-decoration:none;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.message::placeholder {
+    color: rgb(11, 11, 95);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.error::placeholder {
+    color: red;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Succesfully Login */
+.successfullyLogin {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid rgb(98, 36, 255);
+    border-radius: 10px;
+    margin: 200px;
+    padding: 0px;
+}
+.successfullyLogin h1 {
+    color: rgb(98, 36, 255);
+    font-size: 40px;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        height: auto;
+    }
+    #signhead, #loghead {
+        font-size: 28px; 
+    }
+    .username input,
+    .email input,
+    .password input {
+        width: 200px; 
+    }.btn {
+        width: 120px; 
+    }.username p,
+     .email p,
+     .password p {
+        margin-left: 0;
+     }
+    #passwd-close-eye,
+    #passwd-eye {
+        top: auto;
+        bottom: 700px;
+        left: calc(50% - 25px);
+        margin-left: 150px;
+    }
+    .successfullyLogin {
+        border: none;
+    }   
+}
